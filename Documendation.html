@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Documentation Topics</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Setup">Setup</a>
+    <a class="nav-link" href="#Usage">Usage</a>
+    <a class="nav-link" href="#Advanced_Topics">Advanced Topics</a>
+    <a class="nav-link" href="#API_Reference">API Reference</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>Welcome to the documentation. This guide will walk you through everything you need to know.</p>
+      <p>Our tool provides extensive functionality for various needs.</p>
+      <p>Below, you will find different sections explaining each aspect in detail.</p>
+      <code>console.log('Hello, world!');</code>
+    </section>
+
+    <section id="Setup" class="main-section">
+      <header>Setup</header>
+      <p>Setting up the tool is straightforward. Follow these steps:</p>
+      <ul>
+        <li>Download the tool from the official website.</li>
+        <li>Install the tool using the package manager of your choice.</li>
+        <li>Run the initial setup script.</li>
+      </ul>
+      <code>npm install our-tool</code>
+      <code>our-tool setup</code>
+    </section>
+
+    <section id="Usage" class="main-section">
+      <header>Usage</header>
+      <p>Using the tool involves the following basic commands:</p>
+      <p>Ensure you have properly configured the tool before usage.</p>
+      <p>Refer to the command list below for common operations.</p>
+      <code>our-tool start</code>
+      <code>our-tool stop</code>
+    </section>
+
+    <section id="Advanced_Topics" class="main-section">
+      <header>Advanced Topics</header>
+      <p>Dive deeper into the more advanced features:</p>
+      <p>Explore the customization options available.</p>
+      <p>Understand the internal workings for better optimization.</p>
+      <ul>
+        <li>Customization</li>
+        <li>Optimization</li>
+        <li>Troubleshooting</li>
+      </ul>
+    </section>
+
+    <section id="API_Reference" class="main-section">
+      <header>API Reference</header>
+      <p>Here is the complete API reference:</p>
+      <p>Each endpoint and parameter is documented in detail.</p>
+      <p>Ensure you follow the guidelines for API usage.</p>
+      <ul>
+        <li>GET /endpoint</li>
+        <li>POST /endpoint</li>
+        <li>DELETE /endpoint</li>
+      </ul>
+      <code>fetch('/api/endpoint')</code>
+    </section>
+  </main>
+</body>
+</html>
